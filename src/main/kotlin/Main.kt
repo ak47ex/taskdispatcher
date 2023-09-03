@@ -1,8 +1,8 @@
+import com.suenara.taskdispatcher.api.TaskDispatcher
 import com.suenara.taskdispatcher.impl.AsyncMeasurableTaskDispatcher
 import com.suenara.taskdispatcher.impl.ForkJoinMeasurableTaskDispatcher
 import com.suenara.taskdispatcher.impl.NaiveFjpMeasurableTaskDispatcher
 import com.suenara.taskdispatcher.impl.SequentialMeasurableTaskDispatcher
-import com.suenara.taskdispatcher.api.TaskDispatcher
 import java.security.spec.KeySpec
 import java.util.concurrent.ForkJoinPool
 import java.util.concurrent.LinkedBlockingQueue

@@ -45,10 +45,10 @@ class ForkJoinMeasurableTaskDispatcher : TaskDispatcher {
 
     private class FjpTask(runnable: Runnable) : TaskDispatcher.Task {
 
-        val task = ForkJoinTask.adapt(runnable).fork()
+        val task = ForkJoinTask.adapt(runnable)
 
         override fun join() {
-            task.fork()
+            task.join()
         }
     }
 }

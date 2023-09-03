@@ -4,7 +4,7 @@ interface TaskDispatcher {
     val durations: MeasurementsCollection
 
     val durationsSum: Long
-        get() = durations.sumOf(Measurement::duration)
+        get() = durations.sumOf { it.unit.toMillis(it.duration) }
 
     fun dispatch(
         taskName: String,
